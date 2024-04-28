@@ -1,0 +1,171 @@
+﻿<Page x:Class="_01_PDS__Trabalho.Telas.EscolaPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:_01_PDS__Trabalho.Telas"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="EscolaPage">
+
+    <Grid Background="#fff9f4" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="205"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="110"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+
+        <TextBlock Text="Cadastro de Escolas" FontSize="48" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="2" Width="400"/>
+
+        <StackPanel>
+            <Image Grid.Column="3" Grid.Row="0" Source="/Recursos/Imagens/if.png" Margin="0 50" HorizontalAlignment="Right" Height="63" Opacity="0.75" Width="51"/>
+        </StackPanel>
+
+       
+
+        <TextBlock Text="Nome Fantasia:" FontSize="30" Grid.Row="1" Grid.Column="0"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBox Height="50" Padding="2 15"   Grid.Row="1" Grid.Column="1" FontSize="12">
+
+            <TextBox.Resources>
+
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+
+            </TextBox.Resources>
+
+        </TextBox>
+
+        <TextBlock Text="Id:" FontSize="30" Grid.Row="1" Grid.Column="2"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+
+        <TextBox Height="50" Padding="2 15" Width="100" HorizontalAlignment="Left"  Grid.Row="1" Grid.Column="3" FontSize="12">
+
+            <TextBox.Resources>
+
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+
+            </TextBox.Resources>
+
+        </TextBox>
+
+
+
+
+        <TextBlock Text="CNPJ:" FontSize="30" Grid.Row="2" Grid.Column="2"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBox Height="50" Padding="2 15" Grid.Row="2" Width="500" HorizontalAlignment="Left" Grid.Column="3" FontSize="12"  >
+
+            <TextBox.Resources>
+
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+
+            </TextBox.Resources>
+
+        </TextBox>
+
+        <TextBlock Text="Razão Social:" FontSize="30" Grid.Row="2" Grid.Column="0"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+
+        <TextBox Height="50" Padding="2 15" Grid.Row="2" Grid.Column="1" FontSize="12" >
+
+            <TextBox.Resources>
+
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+
+            </TextBox.Resources>
+
+        </TextBox>
+
+
+
+        <TextBlock Text="Endereço:" FontSize="30" Grid.Row="3"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBox Height="50" Padding="2 15" Grid.Row="3" Grid.Column="1" FontSize="12">
+
+            <TextBox.Resources>
+
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+
+            </TextBox.Resources>
+
+        </TextBox>
+
+        <TextBlock Text="Cidade:" FontSize="30" Grid.Row="3" Grid.Column="2"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+
+        <TextBox Height="50" Padding="2 15"   Grid.Row="3" Grid.Column="3"  Width="500" HorizontalAlignment="Left" FontSize="12" >
+
+            <TextBox.Resources>
+
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+
+            </TextBox.Resources>
+
+        </TextBox>
+
+        <TextBlock Text="Estado:" FontSize="30" Grid.Row="4" Grid.Column="0"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBox Height="50" Padding="2 15" Grid.Row="4" Grid.Column="1" FontSize="12" >
+
+            <TextBox.Resources>
+
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+
+            </TextBox.Resources>
+
+        </TextBox>
+
+
+
+
+
+
+       
+
+        <Button Grid.Row="5" Grid.Column="1" Height="42" Margin="20,26,71,36" Width="111" BorderBrush="Transparent"  Background="#c6ece1" >
+
+            <TextBlock Text="Salvar" FontSize="25"></TextBlock>
+
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Grid.Row="5" Grid.Column="2" Height="42" Width="115" BorderBrush="Transparent"  Background="#c6ece1" Click="Button_Click">
+
+            <TextBlock Text="Ver Grid" FontSize="25"></TextBlock>
+
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+
+
+
+    </Grid>
+</Page>
